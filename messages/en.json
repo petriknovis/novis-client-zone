@@ -1,0 +1,19 @@
+{
+  "Auth": {
+    "signIn": "Sign in to your account",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "invalidCredentials": "Invalid email or password",
+    "loginError": "An error occurred during login",
+    "resetPassword": "Reset your password",
+    "resetPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
+    "resetPasswordSuccess": "Check your email for a link to reset your password.",
+    "resetPasswordError": "An error occurred. Please try again.",
+    "backToLogin": "Back to login",
+    "sending": "Sending...",
+    "send": "Send Reset Link"
+  }
+}

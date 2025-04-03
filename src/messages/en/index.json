@@ -1,0 +1,401 @@
+{
+  "common": {
+    "appName": "Novis CZ",
+    "clientZone": "Client Zone",
+    "login": "Login",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "contracts": "Contracts",
+    "insurance-funds": "Insurance Funds",
+    "documents": "Documents",
+    "profile": "Profile",
+    "logged-in": "Logged in as",
+    "settings": "Settings",
+    "contact": "Contact",
+    "policies": "Policies",
+    "claims": "Claims",
+    "billing": "Billing",
+    "faq": "FAQ",
+    "search": "Search",
+    "notifications": "Notifications",
+    "welcome": "Welcome",
+    "viewAll": "View All",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info",
+    "required": "Required",
+    "optional": "Optional",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "and": "and",
+    "all": "All",
+    "none": "None",
+    "more": "More",
+    "less": "Less"
+  },
+  "auth": {
+    "signIn": "Sign in to your account",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "Enter your email address",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "signInButton": "Sign in",
+    "backToHome": "Back to homepage",
+    "invalidCredentials": "Invalid email or password",
+    "loginError": "An error occurred during login",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset your password",
+    "resetPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
+    "resetPasswordSuccess": "Check your email for a link to reset your password.",
+    "resetPasswordError": "An error occurred. Please try again.",
+    "backToLogin": "Back to login",
+    "sending": "Sending...",
+    "send": "Send Reset Link"
+  },
+  "login": {
+    "title": "Welcome to Novis CZ Client Zone",
+    "subtitle": "Please log in to access your account",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot password?",
+    "invalidCredentials": "Invalid email or password"
+  },
+  "dashboard": {
+    "welcome": "Welcome to your dashboard",
+    "overview": "Overview",
+    "activeContracts": "Active Contracts",
+    "totalContracts": "Across {count} total contracts",
+    "totalDocuments": "Total Documents",
+    "documentsAvailable": "Available in your client zone",
+    "annualPremium": "Annual Premium",
+    "nextPayment": "Next Payment",
+    "recentContracts": "Recent Contracts",
+    "recentDocuments": "Recent Documents",
+    "viewAll": "View all",
+    "viewDetails": "View details",
+    "view": "View",
+    "back": "Back",
+    "loading": "Loading contract details..."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "success": "Your message has been sent successfully",
+    "tryAgain": "Send Another Message",
+    "tabs": {
+      "contactForm": "Contact Form",
+      "faq": "FAQ",
+      "contactInfo": "Contact Information"
+    },
+    "contactFormTitle": "Send us a message",
+    "contactFormDescription": "Fill out the form below and we'll get back to you as soon as possible.",
+    "topicLabel": "Topic",
+    "topicPlaceholder": "Select a topic",
+    "generalInquiry": "General Inquiry",
+    "technicalSupport": "Technical Support",
+    "claimsInquiry": "Claims Inquiry",
+    "billingInquiry": "Billing & Payments",
+    "otherInquiry": "Other",
+    "policyNumberLabel": "Policy Number",
+    "policyNumberPlaceholder": "Enter your policy number (optional)",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Enter the subject of your message",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Enter your message here",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "Enter your full name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "Enter your phone number (optional)",
+    "preferredContactLabel": "Preferred Contact Method",
+    "preferEmail": "Email",
+    "preferPhone": "Phone",
+    "fileUploadLabel": "Attachments",
+    "fileUploadButton": "Choose Files",
+    "fileUploadDragAndDrop": "or drag and drop files here",
+    "fileUploadFormats": "Supported formats: PDF, DOC, DOCX, JPG, PNG (max 10MB)",
+    "sending": "Sending...",
+    "submit": "Send Message",
+    "faqTitle": "Frequently Asked Questions",
+    "faqDescription": "Find answers to common questions about our services.",
+    "faq1Question": "How do I file a claim?",
+    "faq1Answer": "You can file a claim through our online portal, mobile app, or by contacting our claims department directly.",
+    "faq2Question": "What payment methods do you accept?",
+    "faq2Answer": "We accept credit/debit cards, bank transfers, and direct debit payments.",
+    "faq3Question": "How long does it take to process a claim?",
+    "faq3Answer": "Most claims are processed within 5-7 business days after receiving all required documentation.",
+    "faq4Question": "Can I change my policy coverage?",
+    "faq4Answer": "Yes, you can modify your coverage at any time. Contact our customer service team to discuss your options.",
+    "faq5Question": "How do I update my contact information?",
+    "faq5Answer": "You can update your contact information through your online account or by contacting our customer service.",
+    "faqAlertTitle": "Need More Help?",
+    "faqAlertMessage": "If you can't find the answer you're looking for, please contact our support team.",
+    "contactInfoTitle": "Contact Information",
+    "contactInfoDescription": "Find the best way to reach us based on your needs.",
+    "contactInfoTabs": {
+      "clients": "For Clients",
+      "intermediaries": "For Intermediaries",
+      "media": "For Media"
+    },
+    "contactInfoClientsPhoneTitle": "Call Center",
+    "contactInfoClientsPhoneDescription": "For general inquiries and support",
+    "contactInfoClientsPhone": "+420 800 123 456",
+    "contactInfoClientsPhoneName": "Customer Support Team",
+    "contactInfoClientsPhonePosition": "Available 24/7",
+    "contactInfoClientsEmailTitle": "Email Support",
+    "contactInfoClientsEmailDescription": "For written inquiries",
+    "contactInfoClientsEmail": "support@novis.eu",
+    "contactInfoClientsEmailName": "Response within 24 hours",
+    "contactInfoClientsMessageTitle": "Live Chat",
+    "contactInfoClientsMessageDescription": "Chat with our support team",
+    "contactInfoClientsMessage": "Available Monday-Friday",
+    "contactInfoClientsMessageName": "9:00 AM - 5:00 PM CET",
+    "contactInfoClientsAlertTitle": "Important Contacts",
+    "contactInfoClientsAlertMessage": "Direct lines for specific departments:",
+    "contactInfoClientsAlertName1": "Claims Department",
+    "contactInfoClientsAlertPhone1": "+420 800 123 457",
+    "contactInfoClientsAlertName2": "Technical Support",
+    "contactInfoClientsAlertPhone2": "+420 800 123 458",
+    "contactInfoClientsAlertName3": "Billing Support",
+    "contactInfoClientsAlertPhone3": "+420 800 123 459",
+    "contactInfoClientsAlertName4": "Emergency Line",
+    "contactInfoClientsAlertPhone4": "+420 800 123 460",
+    "contactInfoClientsAlertName5": "Priority Support",
+    "contactInfoClientsAlertEmail": "priority@novis.eu",
+    "contactInfoIntermediariesPhoneTitle": "Partner Support",
+    "contactInfoIntermediariesPhoneDescription": "For brokers and agents",
+    "contactInfoIntermediariesPhone": "+420 800 234 567",
+    "contactInfoIntermediariesPhoneName": "Partner Relations",
+    "contactInfoIntermediariesPhonePosition": "Senior Partner Manager",
+    "contactInfoIntermediariesEmailTitle": "Partner Email",
+    "contactInfoIntermediariesEmailDescription": "For partnership inquiries",
+    "contactInfoIntermediariesEmail": "partners@novis.eu",
+    "contactInfoIntermediariesEmailName": "Partner Support Team",
+    "contactInfoIntermediariesAlertTitle": "Partner Portal Access",
+    "contactInfoIntermediariesAlertMessage": "For immediate assistance:",
+    "contactInfoIntermediariesAlertName": "Partner Hotline",
+    "contactInfoIntermediariesAlertPhone": "+420 800 234 568",
+    "contactInfoIntermediariesAlertEmail": "Partner Portal Support",
+    "contactInfoIntermediariesAlertEmailValue": "portal.support@novis.eu",
+    "contactInfoMediaTitle": "Media Relations",
+    "contactInfoMediaDescription": "For press and media inquiries",
+    "contactInfoMediaPhone": "+420 800 345 678",
+    "contactInfoMediaEmail": "press@novis.eu"
+  },
+  "home": {
+    "title": "Welcome to Novis CZ Insurance",
+    "subtitle": "Your trusted partner for all insurance needs. Access your contracts, documents, and other services through the client zone.",
+    "clientZoneButton": "Enter Client Zone",
+    "learnMoreButton": "Learn More",
+    "copyright": "All rights reserved."
+  },
+  "insuranceFunds": {
+    "pageTitle": "NOVIS Insurance Funds",
+    "pageDescription": "Discover the power of smart investing with NOVIS Insurance Funds. Our expertly managed funds combine security with growth potential, helping you build a stronger financial future while protecting what matters most.",
+    "exploreTitle": "Explore NOVIS Funds",
+    "exploreDescription": "Learn more about our investment opportunities and start your journey to financial security.",
+    "visitFunds": "Visit NOVIS Funds",
+    "benefits": {
+      "secureInvestment": {
+        "title": "Secure Investment",
+        "description": "Your funds are protected and managed by experienced professionals"
+      },
+      "growthPotential": {
+        "title": "Growth Potential",
+        "description": "Long-term investment strategies designed for optimal returns"
+      },
+      "financialStability": {
+        "title": "Financial Stability",
+        "description": "Diversified portfolio approach to minimize risk"
+      }
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "quote": "NOVIS funds have helped me secure my family's financial future. The returns have been consistent and the service exceptional.",
+      "author": "Jan Novák",
+      "role": "Long-term Client"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Common questions about NOVIS Insurance Funds",
+      "items": {
+        "what": {
+          "question": "What are NOVIS Insurance Funds?",
+          "answer": "NOVIS Insurance Funds are professionally managed investment portfolios that combine insurance protection with investment opportunities, designed to help you achieve your long-term financial goals."
+        },
+        "how": {
+          "question": "How can I invest in NOVIS Funds?",
+          "answer": "You can invest in NOVIS Funds through our various insurance products. Contact our support team or visit our detailed funds page for more information."
+        },
+        "unique": {
+          "question": "What makes NOVIS Funds unique?",
+          "answer": "NOVIS Funds offer a unique combination of security, professional management, and growth potential, all while providing insurance coverage for your peace of mind."
+        }
+      }
+    },
+    "support": {
+      "title": "Need More Information?",
+      "description": "Our team is here to help you understand our insurance funds better.",
+      "button": "Contact Support"
+    }
+  },
+  "contracts": {
+    "contractTitle": "Contract Title",
+    "type": "Type",
+    "validPeriod": "Valid Period",
+    "searchPlaceholder": "Search contracts...",
+    "status": {
+      "active": "Active",
+      "pending": "Pending",
+      "expired": "Expired",
+      "label": "Status"
+    },
+    "details": {
+      "annualPremium": "Annual Premium",
+      "coverageDetails": "Coverage Details",
+      "policyValid": "Policy valid from",
+      "to": "to",
+      "viewDetails": "View details"
+    },
+    "contractDetails": "Contract Details",
+    "policy": "Policy #{id}",
+    "contractHolder": {
+      "title": "Contract Holder",
+      "description": "The individual or entity responsible for the contract",
+      "name": "Name",
+      "id": "ID",
+      "email": "Email",
+      "cancel": "Cancel"
+    },
+    "insuredPerson": {
+      "title": "Insured Person",
+      "description": "The individual whose life or property is covered by the insurance",
+      "name": "Name",
+      "id": "ID",
+      "email": "Email"
+    },
+    "beneficiary": {
+      "title": "Beneficiaries in Case of Death",
+      "description": "Individuals designated to receive benefits in the event of the insured person's death",
+      "name": "Name",
+      "id": "ID",
+      "birthdate": "Birthdate"
+    },
+    "relatedDocuments": {
+      "title": "Related Documents",
+      "description": "Documents associated with this contract",
+      "noDocuments": "No documents associated with this contract."
+    },
+    "updateSuccess": "Contract updated successfully!",
+    "save": "Save",
+    "noResults": "No contracts found matching your criteria.",
+    "contractList": {
+      "title": "Your Contracts",
+      "search": "Search contracts...",
+      "active": "Active",
+      "cancelled": "Cancelled",
+      "expired": "Expired"
+    },
+    "coverageDetails": "Coverage Details",
+    "validPeriod": "Policy Validity",
+    "from": "from",
+    "to": "to"
+  },
+  "documents": {
+    "title": "Documents",
+    "search": {
+      "placeholder": "Search documents..."
+    },
+    "filters": {
+      "all": "All",
+      "types": {
+        "statement": "Statement",
+        "invoice": "Invoice",
+        "contract": "Contract",
+        "report": "Report"
+      }
+    },
+    "table": {
+      "header": {
+        "document": "Document",
+        "type": "Type",
+        "date": "Date",
+        "relatedTo": "Related To",
+        "actions": "Actions"
+      },
+      "general": "General",
+      "unknownContract": "Unknown Contract",
+      "noResults": "No documents found matching your criteria.",
+      "actions": {
+        "view": "View",
+        "download": "Download"
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "personalInfo": {
+      "title": "Personal Information",
+      "description": "Your account details and preferences",
+      "clientId": "Client ID",
+      "editProfile": "Edit Profile",
+      "cancel": "Cancel",
+      "success": "Profile updated successfully!"
+    },
+    "contactDetails": {
+      "title": "Contact Details",
+      "description": "Manage your contact information",
+      "fullName": "Full Name",
+      "emailAddress": "Email Address",
+      "phoneNumber": "Phone Number",
+      "address": "Address",
+      "saveChanges": "Save Changes"
+    },
+    "security": {
+      "title": "Security Settings",
+      "description": "Manage your password and security preferences",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "validation": {
+        "passwordMismatch": "New passwords do not match!",
+        "passwordLength": "Password must be at least 6 characters long!",
+        "success": "Password updated successfully!"
+      }
+    },
+    "notifications": {
+      "title": "Notification Settings",
+      "description": "Manage your notification preferences",
+      "email": {
+        "title": "Email Notifications",
+        "contractUpdates": "Contract Updates",
+        "paymentReminders": "Payment Reminders",
+        "newDocuments": "New Documents",
+        "policyChanges": "Policy Changes"
+      },
+      "sms": {
+        "title": "SMS Notifications",
+        "paymentReminders": "Payment Reminders",
+        "importantUpdates": "Important Updates"
+      },
+      "savePreferences": "Save Preferences"
+    }
+  }
+}
