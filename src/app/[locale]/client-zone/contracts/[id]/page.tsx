@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTranslations } from 'next-intl';
 import { useParams, useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -35,6 +35,92 @@ export default function ContractDetailsPage() {
     payments: false
   });
   const [mounted, setMounted] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [sortConfig, setSortConfig] = useState<{
+    key: 'date' | 'value' | 'type';
+    direction: 'asc' | 'desc';
+  } | null>(null);
+  const paymentsPerPage = 10;
+
+  const payments = [
+    { date: "02.01.2025", value: "40 000 Ft", type: "Premium" },
+    { date: "03.08.2022", value: "20 000 Ft", type: "Premium" },
+    { date: "04.01.2023", value: "20 000 Ft", type: "Premium" },
+    { date: "04.04.2022", value: "28 000 Ft", type: "Tax Bonus" },
+    { date: "05.01.2022", value: "20 000 Ft", type: "Premium" },
+    { date: "05.01.2024", value: "60 000 Ft", type: "Premium" },
+    { date: "05.06.2022", value: "20 000 Ft", type: "Premium" },
+    { date: "05.07.2022", value: "20 000 Ft", type: "Premium" },
+    { date: "05.09.2022", value: "20 000 Ft", type: "Premium" },
+    { date: "06.02.2023", value: "20 000 Ft", type: "Premium" },
+    { date: "06.03.2022", value: "20 000 Ft", type: "Premium" },
+    { date: "06.05.2024", value: "40 000 Ft", type: "Premium" },
+    { date: "06.07.2024", value: "40 000 Ft", type: "Premium" },
+    { date: "06.09.2024", value: "40 000 Ft", type: "Premium" },
+    { date: "06.12.2022", value: "20 000 Ft", type: "Premium" },
+    // Page 2 data
+    { date: "07.01.2023", value: "25 000 Ft", type: "Premium" },
+    { date: "07.03.2023", value: "25 000 Ft", type: "Premium" },
+    { date: "07.05.2023", value: "30 000 Ft", type: "Tax Bonus" },
+    { date: "08.01.2023", value: "25 000 Ft", type: "Premium" },
+    { date: "08.04.2023", value: "25 000 Ft", type: "Premium" }
+  ];
+
+  const handleSort = (key: 'date' | 'value' | 'type') => {
+    setSortConfig((prevSort) => ({
+      key,
+      direction: 
+        prevSort?.key === key && prevSort?.direction === 'asc'
+          ? 'desc'
+          : 'asc',
+    }));
+  };
+
+  const sortedAndFilteredPayments = useMemo(() => {
+    let result = [...payments];
+    
+    // First apply search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(payment => 
+        payment.type.toLowerCase().includes(query) ||
+        payment.date.toLowerCase().includes(query) ||
+        payment.value.toLowerCase().includes(query)
+      );
+    }
+
+    // Then apply sorting
+    if (sortConfig) {
+      result.sort((a, b) => {
+        if (sortConfig.key === 'date') {
+          const dateA = new Date(a.date.split('.').reverse().join('-'));
+          const dateB = new Date(b.date.split('.').reverse().join('-'));
+          return sortConfig.direction === 'asc' 
+            ? dateA.getTime() - dateB.getTime()
+            : dateB.getTime() - dateA.getTime();
+        }
+        
+        if (sortConfig.key === 'value') {
+          const valueA = parseInt(a.value.replace(/[^0-9]/g, ''));
+          const valueB = parseInt(b.value.replace(/[^0-9]/g, ''));
+          return sortConfig.direction === 'asc' ? valueA - valueB : valueB - valueA;
+        }
+        
+        return sortConfig.direction === 'asc'
+          ? a[sortConfig.key].localeCompare(b[sortConfig.key])
+          : b[sortConfig.key].localeCompare(a[sortConfig.key]);
+      });
+    }
+
+    return result;
+  }, [sortConfig, payments, searchQuery]);
+
+  const totalFilteredPages = Math.ceil(sortedAndFilteredPayments.length / paymentsPerPage);
+  const currentPayments = sortedAndFilteredPayments.slice(
+    (currentPage - 1) * paymentsPerPage,
+    currentPage * paymentsPerPage
+  );
 
   useEffect(() => {
     setMounted(true);
@@ -87,6 +173,10 @@ export default function ContractDetailsPage() {
 
   const toggleSection = (section: keyof typeof showDetails) => {
     setShowDetails(prev => ({ ...prev, [section]: !prev[section] }));
+  };
+
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
   };
 
   if (!mounted) {
@@ -446,11 +536,11 @@ export default function ContractDetailsPage() {
                           <p><span className="text-gray-500">NOVIS bonuses: </span> <span className="font-medium">€3,553.00</span></p>
                           <p><span className="text-gray-500">Tax credits: </span> <span className="font-medium">€371,435.00</span></p>
                           <p><span className="text-gray-500">Summary: </span> <span className="font-medium">€374,988.00</span></p>
-                          <p className="text-sm text-gray-500 mt-4">
-                          *The data shown are for informational purposes only. They include all NOVIS bonuses and tax credits available during the contract period. The calculation was made on the assumption that the payment is contracted until the entire contract period, the insurance coverage remains unchanged and that the insurance contract remain in force throughout. During the calculation, we did not calculate the assumed return of bonuses and tax credits.
-                        </p>
                         </div>
                       </div>
+                      <p className="text-sm text-gray-500 mt-4">
+                          *The data shown are for informational purposes only. They include all NOVIS bonuses and tax credits available during the contract period. The calculation was made on the assumption that the payment is contracted until the entire contract period, the insurance coverage remains unchanged and that the insurance contract remain in force throughout. During the calculation, we did not calculate the assumed return of bonuses and tax credits.
+                        </p>
                       
 
 
@@ -565,9 +655,9 @@ export default function ContractDetailsPage() {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle>Platby</CardTitle>
+                      <CardTitle>Payments</CardTitle>
                       <CardDescription>
-                        Sledujte svoje platby poistného, dátumy splatnosti a históriu transakcií
+                      All paid insurance premiums and tax bonuses
                       </CardDescription>
                     </div>
                     <button onClick={() => toggleSection('payments')}>
@@ -575,7 +665,105 @@ export default function ContractDetailsPage() {
                     </button>
                   </div>
                 </CardHeader>
+                {showDetails?.payments && (
+                  <CardContent className="text-sm">
+                    <h4 className="font-semibold mb-4">All paid insurance premiums and tax bonuses</h4>
+                    
+                    {/* Search input */}
+                    <div className="mb-4">
+                      <div className="relative">
+                        <input
+                          type="text"
+                          placeholder="Search by type, date, or value..."
+                          value={searchQuery}
+                          onChange={(e) => {
+                            setSearchQuery(e.target.value);
+                            setCurrentPage(1); // Reset to first page when searching
+                          }}
+                          className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-100"
+                        />
+                        {searchQuery && (
+                          <button
+                            onClick={() => {
+                              setSearchQuery('');
+                              setCurrentPage(1);
+                            }}
+                            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                          >
+                            ✕
+                          </button>
+                        )}
+                      </div>
+                    </div>
 
+                    <div className="overflow-hidden rounded-lg border">
+                      <div className="grid grid-cols-3 bg-blue-50 text-gray-900 font-medium">
+                        <button 
+                          onClick={() => handleSort('date')} 
+                          className="px-4 py-3 text-left hover:bg-blue-100 flex items-center gap-2"
+                        >
+                          Date
+                          {sortConfig?.key === 'date' && (
+                            <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                          )}
+                        </button>
+                        <button 
+                          onClick={() => handleSort('value')} 
+                          className="px-4 py-3 text-right hover:bg-blue-100 flex items-center justify-end gap-2"
+                        >
+                          Value
+                          {sortConfig?.key === 'value' && (
+                            <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                          )}
+                        </button>
+                        <button 
+                          onClick={() => handleSort('type')} 
+                          className="px-4 py-3 text-left hover:bg-blue-100 flex items-center gap-2"
+                        >
+                          Type
+                          {sortConfig?.key === 'type' && (
+                            <span>{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                          )}
+                        </button>
+                      </div>
+                      <div className="divide-y">
+                        {currentPayments.map((payment, index) => (
+                          <div key={index} className={`grid grid-cols-3 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+                            <div className="px-4 py-3">{payment.date}</div>
+                            <div className="px-4 py-3 text-right">{payment.value}</div>
+                            <div className="px-4 py-3">{payment.type}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-center gap-2 mt-6">
+                      <Button
+                        onClick={() => handlePageChange(1)}
+                        variant="outline"
+                        disabled={currentPage === 1}
+                      >
+                        Previous page
+                      </Button>
+                      {[...Array(totalFilteredPages).keys()].map((pageNumber) => (
+                        <Button
+                          key={pageNumber}
+                          onClick={() => handlePageChange(pageNumber + 1)}
+                          variant={currentPage === pageNumber + 1 ? "default" : "outline"}
+                          className={currentPage === pageNumber + 1 ? "bg-blue-100 hover:bg-blue-100" : ""}
+                        >
+                          {pageNumber + 1}
+                        </Button>
+                      ))}
+                      <Button
+                        onClick={() => handlePageChange(totalFilteredPages)}
+                        variant="outline"
+                        disabled={currentPage === totalFilteredPages}
+                      >
+                        Next page
+                      </Button>
+                    </div>
+                  </CardContent>
+                )}
               </div>
             </Card>
 
