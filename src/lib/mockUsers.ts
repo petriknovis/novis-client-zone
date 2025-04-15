@@ -11,7 +11,13 @@ export const users: User[] = [
     password: "admin",
     name: "Administrator",
     id: "1"
-  }
+  },
+  {
+    email: "jankom@test.com",
+    password: "jankom",
+    name: "Janko Mrkvicka",
+    id: "2"
+  },
 ];
 
 export const findUser = (email: string, password: string): User | undefined => {

@@ -92,7 +92,7 @@ export default function ContractsPage() {
                       </span>
                     </div>
                     <CardDescription>
-                      {contract.type} • {t('details.policyValid')} {new Date(contract.startDate).toLocaleDateString()} {t('details.to')} {new Date(contract.endDate).toLocaleDateString()}
+                      {contract.number} • {t('details.policyValid')} {new Date(contract.startDate).toLocaleDateString()} {t('details.to')} {new Date(contract.endDate).toLocaleDateString()}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -101,10 +101,10 @@ export default function ContractsPage() {
                         <p className="text-sm text-gray-500">{t('details.annualPremium')}</p>
                         <p className="font-medium">€{contract.premium.toLocaleString()}</p>
                       </div>
-                      <div>
+                      {/* <div>
                         <p className="text-sm text-gray-500">{t('details.coverageDetails')}</p>
                         <p className="font-medium">{contract.details}</p>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="flex justify-end">
                       <Link 

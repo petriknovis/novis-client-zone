@@ -34,8 +34,8 @@ async function getMessages(locale: string) {
   }
 }
 
-export default async function LocaleLayout(props: Props) {
-  const locale = props.params.locale;
+export default async function LocaleLayout({ children, params }: Props) {
+  const locale = params.locale;
 
   if (!locales.includes(locale as any)) {
     notFound();
@@ -46,7 +46,7 @@ export default async function LocaleLayout(props: Props) {
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <AuthProvider>
-        {props.children}
+        {children}
       </AuthProvider>
     </NextIntlClientProvider>
   );

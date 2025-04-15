@@ -1,389 +1,443 @@
 {
-  "common": {
-    "appName": "Novis CZ",
-    "clientZone": "Klientská zóna",
-    "login": "Prihlásiť sa",
-    "logout": "Odhlásiť sa",
-    "dashboard": "Prehľad",
-    "contracts": "Zmluvy",
-    "insurance-funds": "Poistné Fondy",
-    "documents": "Dokumenty",
-    "profile": "Profil",
-    "logged-in": "Prihlásený ako",
-    "settings": "Nastavenia",
-    "contact": "Kontakt",
-    "policies": "Poistky",
-    "claims": "Poistné udalosti",
-    "billing": "Platby",
-    "faq": "Časté otázky",
-    "search": "Hľadať",
-    "notifications": "Oznámenia",
-    "welcome": "Vitajte",
-    "viewAll": "Zobraziť všetko",
-    "save": "Uložiť",
-    "cancel": "Zrušiť",
-    "delete": "Vymazať",
-    "edit": "Upraviť",
-    "add": "Pridať",
-    "submit": "Odoslať",
-    "back": "Späť",
-    "next": "Ďalej",
-    "previous": "Predchádzajúci",
-    "loading": "Načítava sa...",
-    "error": "Chyba",
-    "success": "Úspech",
-    "warning": "Upozornenie",
-    "info": "Info",
-    "required": "Povinné",
-    "optional": "Voliteľné",
-    "yes": "Áno",
-    "no": "Nie",
-    "or": "alebo",
-    "and": "a",
-    "all": "Všetko",
-    "none": "Žiadne",
-    "more": "Viac",
-    "less": "Menej",
-    "from": "od",
-    "to": "do"
-  },
-  "auth": {
-    "signIn": "Prihláste sa do svojho účtu",
-    "emailLabel": "E-mailová adresa",
-    "emailPlaceholder": "Zadajte svoj e-mail",
-    "passwordLabel": "Heslo",
-    "passwordPlaceholder": "Zadajte svoje heslo",
-    "signInButton": "Prihlásiť sa",
-    "backToHome": "Späť na úvodnú stránku",
-    "invalidCredentials": "Neplatný email alebo heslo",
-    "loginError": "Počas prihlasovania sa vyskytla chyba",
-    "forgotPassword": "Zabudli ste heslo?",
-    "resetPassword": "Obnovenie hesla",
-    "resetPasswordDescription": "Zadajte svoju e-mailovú adresu a pošleme vám odkaz na obnovenie hesla.",
-    "resetPasswordSuccess": "Skontrolujte svoj e-mail pre odkaz na obnovenie hesla.",
-    "resetPasswordError": "Vyskytla sa chyba. Prosím, skúste to znova.",
-    "backToLogin": "Späť na prihlásenie",
-    "sending": "Odosielanie...",
-    "send": "Odoslať odkaz"
-  },
-  "dashboard": {
-    "overview": "Prehľad",
-    "activeContracts": "Aktívne Zmluvy",
-    "totalContracts": "Z celkového počtu {count} zmlúv",
-    "totalDocuments": "Celkový Počet Dokumentov",
-    "documentsAvailable": "Dostupné vo vašej klientskej zóne",
-    "annualPremium": "Ročné Poistné",
-    "nextPayment": "Ďalšia Platba",
-    "recentContracts": "Nedávne Zmluvy",
-    "recentDocuments": "Nedávne Dokumenty",
-    "viewAll": "Zobraziť všetko",
-    "viewDetails": "Zobraziť detaily",
-    "view": "Zobraziť",
-    "back": "Späť",
-    "loading": "Načítavanie detailov zmluvy..."
-  },
-  "home": {
-    "title": "Vitajte v poisťovni Novis CZ",
-    "subtitle": "Váš dôveryhodný partner pre všetky poistné potreby. Pristupujte k svojim zmluvám, dokumentom a ďalším službám prostredníctvom klientskej zóny.",
-    "clientZoneButton": "Vstup do klientskej zóny",
-    "learnMoreButton": "Zistiť viac",
-    "copyright": "Všetky práva vyhradené."
-  },
-  "contact": {
-    "title": "Kontaktujte nás",
-    "subtitle": "Spojte sa s naším tímom",
-    "success": "Vaša správa bola úspešne odoslaná",
-    "tryAgain": "Poslať ďalšiu správu",
-    "tabs": {
-      "contactForm": "Kontaktný formulár",
-      "faq": "Časté otázky",
-      "contactInfo": "Kontaktné informácie"
+    "common": {
+        "appName": "Novis CZ",
+        "clientZone": "Klientská zóna",
+        "login": "Prihlásiť sa",
+        "logout": "Odhlásiť sa",
+        "dashboard": "Prehľad",
+        "contracts": "Zmluvy",
+        "insurance-funds": "Poisťovacie fondy",
+        "documents": "Dokumenty",
+        "profile": "Profil",
+        "logged-in": "Prihlásený ako",
+        "settings": "Nastavenia",
+        "contact": "Kontakt",
+        "policies": "Poisťovacie zmluvy",
+        "claims": "Pojistné udalosti",
+        "billing": "Fakturácia",
+        "faq": "Často kladené otázky",
+        "search": "Hľadať",
+        "notifications": "Oznámenia",
+        "welcome": "Vitajte",
+        "viewAll": "Zobraziť všetko",
+        "save": "Uložiť",
+        "cancel": "Zrušiť",
+        "delete": "Vymazať",
+        "edit": "Upraviť",
+        "add": "Pridať",
+        "submit": "Odoslať",
+        "back": "Späť",
+        "next": "Ďalej",
+        "previous": "Predchádzajúci",
+        "loading": "Načítava sa...",
+        "error": "Chyba",
+        "success": "Úspech",
+        "warning": "Varovanie",
+        "info": "Informácia",
+        "required": "Povinné",
+        "optional": "Nepovinné",
+        "yes": "Áno",
+        "no": "Nie",
+        "or": "alebo",
+        "and": "a",
+        "all": "Všetko",
+        "none": "Nič",
+        "more": "Viac",
+        "less": "Menej"
     },
-    "contactFormTitle": "Pošlite nám správu",
-    "contactFormDescription": "Vyplňte formulár nižšie a my sa vám ozveme čo najskôr.",
-    "topicLabel": "Téma",
-    "topicPlaceholder": "Vyberte tému",
-    "generalInquiry": "Všeobecná otázka",
-    "technicalSupport": "Technická podpora",
-    "claimsInquiry": "Otázka k poistnej udalosti",
-    "billingInquiry": "Fakturácia a platby",
-    "otherInquiry": "Iné",
-    "policyNumberLabel": "Číslo poistky",
-    "policyNumberPlaceholder": "Zadajte číslo poistky (voliteľné)",
-    "subjectLabel": "Predmet",
-    "subjectPlaceholder": "Zadajte predmet vašej správy",
-    "messageLabel": "Správa",
-    "messagePlaceholder": "Zadajte vašu správu tu",
-    "nameLabel": "Vaše meno",
-    "namePlaceholder": "Zadajte vaše celé meno",
-    "emailLabel": "E-mailová adresa",
-    "emailPlaceholder": "Zadajte vašu e-mailovú adresu",
-    "phoneLabel": "Telefónne číslo",
-    "phonePlaceholder": "Zadajte vaše telefónne číslo (voliteľné)",
-    "preferredContactLabel": "Preferovaný spôsob kontaktu",
-    "preferEmail": "E-mail",
-    "preferPhone": "Telefón",
-    "fileUploadLabel": "Prílohy",
-    "fileUploadButton": "Vybrať súbory",
-    "fileUploadDragAndDrop": "alebo presuňte súbory sem",
-    "fileUploadFormats": "Podporované formáty: PDF, DOC, DOCX, JPG, PNG (max 10MB)",
-    "sending": "Odosielanie...",
-    "submit": "Odoslať správu",
-    "faqTitle": "Časté otázky",
-    "faqDescription": "Nájdite odpovede na bežné otázky o našich službách.",
-    "faq1Question": "Ako nahlásim poistnú udalosť?",
-    "faq1Answer": "Poistnú udalosť môžete nahlásiť cez náš online portál, mobilnú aplikáciu alebo kontaktovaním nášho oddelenia poistných udalostí.",
-    "faq2Question": "Aké platobné metódy prijímate?",
-    "faq2Answer": "Prijímame platby kartou, bankovým prevodom a inkasom.",
-    "faq3Question": "Ako dlho trvá spracovanie poistnej udalosti?",
-    "faq3Answer": "Väčšina poistných udalostí je spracovaná do 5-7 pracovných dní po obdržaní všetkých potrebných dokumentov.",
-    "faq4Question": "Môžem zmeniť rozsah poistného krytia?",
-    "faq4Answer": "Áno, rozsah poistného krytia môžete zmeniť kedykoľvek. Kontaktujte náš zákaznícky servis pre prejednanie možností.",
-    "faq5Question": "Ako aktualizujem svoje kontaktné údaje?",
-    "faq5Answer": "Svoje kontaktné údaje môžete aktualizovať cez váš online účet alebo kontaktovaním nášho zákazníckeho servisu.",
-    "faqAlertTitle": "Potrebujete ďalšiu pomoc?",
-    "faqAlertMessage": "Ak ste nenašli odpoveď na vašu otázku, kontaktujte náš tím podpory.",
-    "contactInfoTitle": "Kontaktné informácie",
-    "contactInfoDescription": "Nájdite najlepší spôsob, ako nás kontaktovať podľa vašich potrieb.",
-    "contactInfoTabs": {
-      "clients": "Pre klientov",
-      "intermediaries": "Pre sprostredkovateľov",
-      "media": "Pre médiá"
+    "auth": {
+        "signIn": "Prihláste sa do svojho účtu",
+        "emailLabel": "Emailová adresa",
+        "emailPlaceholder": "Zadajte svoju emailovú adresu",
+        "passwordLabel": "Heslo",
+        "passwordPlaceholder": "Zadajte svoje heslo",
+        "signInButton": "Prihlásiť sa",
+        "backToHome": "Späť na úvodnú stránku",
+        "invalidCredentials": "Neplatný email alebo heslo",
+        "loginError": "Počas prihlasovania nastala chyba",
+        "forgotPassword": "Zabudnuté heslo?",
+        "resetPassword": "Obnovte svoje heslo",
+        "resetPasswordDescription": "Zadajte svoju emailovú adresu a pošleme vám odkaz na obnovenie hesla.",
+        "resetPasswordSuccess": "Skontrolujte svoj email a obnovte heslo pomocou odkazu.",
+        "resetPasswordError": "Vyskytla sa chyba. Skúste to znova.",
+        "backToLogin": "Späť na prihlásenie",
+        "sending": "Odosiela sa...",
+        "send": "Odoslať odkaz na obnovenie"
     },
-    "contactInfoClientsPhoneTitle": "Call Centrum",
-    "contactInfoClientsPhoneDescription": "Pre všeobecné otázky a podporu",
-    "contactInfoClientsPhone": "+420 800 123 456",
-    "contactInfoClientsPhoneName": "Tím zákazníckej podpory",
-    "contactInfoClientsPhonePosition": "K dispozícii 24/7",
-    "contactInfoClientsEmailTitle": "E-mailová podpora",
-    "contactInfoClientsEmailDescription": "Pre písomné otázky",
-    "contactInfoClientsEmail": "podpora@novis.eu",
-    "contactInfoClientsEmailName": "Odpoveď do 24 hodín",
-    "contactInfoClientsMessageTitle": "Live Chat",
-    "contactInfoClientsMessageDescription": "Chatujte s naším tímom podpory",
-    "contactInfoClientsMessage": "K dispozícii pondelok-piatok",
-    "contactInfoClientsMessageName": "9:00 - 17:00 SEČ",
-    "contactInfoClientsAlertTitle": "Dôležité kontakty",
-    "contactInfoClientsAlertMessage": "Priame linky pre konkrétne oddelenia:",
-    "contactInfoClientsAlertName1": "Oddelenie poistných udalostí",
-    "contactInfoClientsAlertPhone1": "+420 800 123 457",
-    "contactInfoClientsAlertName2": "Technická podpora",
-    "contactInfoClientsAlertPhone2": "+420 800 123 458",
-    "contactInfoClientsAlertName3": "Podpora fakturácie",
-    "contactInfoClientsAlertPhone3": "+420 800 123 459",
-    "contactInfoClientsAlertName4": "Núdzová linka",
-    "contactInfoClientsAlertPhone4": "+420 800 123 460",
-    "contactInfoClientsAlertName5": "Prioritná podpora",
-    "contactInfoClientsAlertEmail": "priorita@novis.eu",
-    "contactInfoIntermediariesPhoneTitle": "Podpora partnerov",
-    "contactInfoIntermediariesPhoneDescription": "Pre maklérov a agentov",
-    "contactInfoIntermediariesPhone": "+420 800 234 567",
-    "contactInfoIntermediariesPhoneName": "Vzťahy s partnermi",
-    "contactInfoIntermediariesPhonePosition": "Senior manažér pre partnerov",
-    "contactInfoIntermediariesEmailTitle": "E-mail pre partnerov",
-    "contactInfoIntermediariesEmailDescription": "Pre partnerské otázky",
-    "contactInfoIntermediariesEmail": "partneri@novis.eu",
-    "contactInfoIntermediariesEmailName": "Tím podpory partnerov",
-    "contactInfoIntermediariesAlertTitle": "Prístup k portálu partnerov",
-    "contactInfoIntermediariesAlertMessage": "Pre okamžitú pomoc:",
-    "contactInfoIntermediariesAlertName": "Partnerská hotline",
-    "contactInfoIntermediariesAlertPhone": "+420 800 234 568",
-    "contactInfoIntermediariesAlertEmail": "Podpora portálu partnerov",
-    "contactInfoIntermediariesAlertEmailValue": "portal.podpora@novis.eu",
-    "contactInfoMediaTitle": "Vzťahy s médiami",
-    "contactInfoMediaDescription": "Pre tlačové a mediálne otázky",
-    "contactInfoMediaPhone": "+420 800 345 678",
-    "contactInfoMediaEmail": "tlac@novis.eu"
-  },
-  "contracts": {
-    "title": "Zmluvy",
-    "contractTitle": "Názov zmluvy",
-    "type": "Typ",
-    "validPeriod": "Platnosť",
-    "searchPlaceholder": "Vyhľadať zmluvy...",
-    "status": {
-      "active": "Aktívna",
-      "pending": "Čakajúca",
-      "expired": "Vypršaná",
-      "label": "Stav"
+    "login": {
+        "title": "Vitajte v Klientskej zóne Novis CZ",
+        "subtitle": "Prosím, prihláste sa pre prístup k svojmu účtu",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Zadajte svoj email",
+        "passwordLabel": "Heslo",
+        "passwordPlaceholder": "Zadajte svoje heslo",
+        "loginButton": "Prihlásiť sa",
+        "forgotPassword": "Zabudnuté heslo?",
+        "invalidCredentials": "Neplatný email alebo heslo"
     },
-    "details": {
-      "annualPremium": "Ročné poistné",
-      "coverageDetails": "Detaily krytia",
-      "policyValid": "Poistka platná od",
-      "to": "do",
-      "viewDetails": "Zobraziť detaily",
-      "from": "od"
-    },
-    "contractDetails": "Detaily zmluvy",
-    "policy": "Poistka #{id}",
-    "contractHolder": {
-      "title": "Držiteľ zmluvy",
-      "description": "Osoba alebo subjekt zodpovedný za zmluvu",
-      "name": "Meno",
-      "id": "ID",
-      "email": "Email",
-      "cancel": "Zrušiť"
-    },
-    "insuredPerson": {
-      "title": "Poistená osoba",
-      "description": "Osoba, ktorej život alebo majetok je poistený",
-      "name": "Meno",
-      "id": "ID",
-      "email": "Email"
-    },
-    "beneficiary": {
-      "title": "Oprávnené osoby v prípade smrti",
-      "description": "Osoby určené na prijatie plnenia v prípade smrti poistenej osoby",
-      "name": "Meno",
-      "id": "ID",
-      "birthdate": "Dátum narodenia"
-    },
-    "relatedDocuments": {
-      "title": "Súvisiace dokumenty",
-      "description": "Dokumenty spojené s touto zmluvou",
-      "noDocuments": "K tejto zmluve nie sú priradené žiadne dokumenty."
-    },
-    "updateSuccess": "Zmluva bola úspešne aktualizovaná!",
-    "save": "Uložiť",
-    "noResults": "Neboli nájdené žiadne zmluvy zodpovedajúce vašim kritériám.",
-    "list": {
-      "title": "Vaše zmluvy",
-      "search": "Vyhľadať zmluvy...",
-      "active": "Aktívne",
-      "cancelled": "Zrušené",
-      "expired": "Vypršané"
-    }
-  },
-  "documents": {
-    "title": "Dokumenty",
-    "search": {
-      "placeholder": "Hľadať dokumenty..."
-    },
-    "filters": {
-      "all": "Všetky",
-      "types": {
-        "statement": "Výpis",
-        "invoice": "Faktúra",
-        "contract": "Zmluva",
-        "report": "Správa"
-      }
-    },
-    "table": {
-      "header": {
-        "document": "Dokument",
-        "type": "Typ",
-        "date": "Dátum",
-        "relatedTo": "Súvisí s",
-        "actions": "Akcie"
-      },
-      "general": "Všeobecné",
-      "unknownContract": "Neznáma zmluva",
-      "noResults": "Neboli nájdené žiadne dokumenty zodpovedajúce vašim kritériám.",
-      "actions": {
+    "dashboard": {
+        "welcome": "Sme radi, že ste späť.",
+        "overview": "Prehľad",
+        "activeContracts": "{count} aktívnych poistiek",
+        "totalContracts": "Celkovo {count} zmlúv",
+        "totalDocuments": "Celkový počet dokumentov",
+        "documentsAvailable": "Dostupné vo vašej klientskej zóne",
+        "annualPremium": "Ročné poistné",
+        "nextPayment": "Nasledujúca platba",
+        "monthlyPremium": "Mesačné poistné",
+        "totalCoverage": "Vaše krytie",
+        "coverageTypes": "Vrátane: {types}",
+        "insuranceOverview": "Vaše poistné zmluvy",
+        "validUntil": "Platné do",
+        "premium": "Poistné",
+        "property": "Majetok",
+        "vehicle": "Vozidlo",
+        "personal": "Osobné",
+        "recentContracts": "Nedávne zmluvy",
+        "recentDocuments": "Nedávne dokumenty",
+        "viewAll": "Zobraziť všetko",
+        "viewDetails": "Zobraziť podrobnosti",
         "view": "Zobraziť",
-        "download": "Stiahnuť"
-      }
-    }
-  },
-  "insuranceFunds": {
-    "pageTitle": "NOVIS Poistné Fondy",
-    "pageDescription": "Objavte silu inteligentného investovania s NOVIS poistnými fondami. Naše odborne spravované fondy kombinujú bezpečnosť s potenciálom rastu a pomáhajú vám budovať silnejšiu finančnú budúcnosť pri ochrane toho, na čom záleží najviac.",
-    "exploreTitle": "Preskúmajte NOVIS Fondy",
-    "exploreDescription": "Dozviete sa viac o našich investičných príležitostiach a začnite svoju cestu k finančnej istote.",
-    "visitFunds": "Navštíviť NOVIS Fondy",
-    "benefits": {
-      "secureInvestment": {
-        "title": "Bezpečná Investícia",
-        "description": "Vaše prostriedky sú chránené a spravované skúsenými odborníkmi"
-      },
-      "growthPotential": {
-        "title": "Potenciál Rastu",
-        "description": "Dlhodobé investičné stratégie navrhnuté pre optimálne výnosy"
-      },
-      "financialStability": {
-        "title": "Finančná Stabilita",
-        "description": "Diverzifikovaný prístup k portfóliu pre minimalizáciu rizika"
-      }
+        "back": "Späť",
+        "loading": "Načítavajú sa detaily zmluvy...",
+        "goodMorning": "Dobré ráno",
+        "goodAfternoon": "Dobrý deň",
+        "goodEvening": "Dobrý večer",
+        "welcomeMessage": "Sme radi, že ste späť.",
+        "localTime": "Miestny čas",
+        "todayIs": "Dnes je",
+        "haveAGreatDay": "Nech je dnešok úžasný!",
+        "quickTip": "Rýchly tip",
+        "dailyTip": "Nezabudnite si počas dňa dať krátke prestávky a zostať hydratovaní!",
+        "activitySummary": "Prehľad aktivít",
+        "lastLoginTime": "Posledné prihlásenie",
+        "notificationCount": "Upozornenia",
+        "newNotifications": "{count} nových upozornení",
+        "nextReminder": "Ďalšia pripomienka",
+        "upcomingEvent": "Tímový míting o 14:00"
     },
-    "testimonials": {
-      "title": "Čo Hovoria Naši Klienti",
-      "quote": "NOVIS fondy mi pomohli zabezpečiť finančnú budúcnosť mojej rodiny. Výnosy boli konzistentné a služby výnimočné.",
-      "author": "Ján Novák",
-      "role": "Dlhodobý Klient"
+    "contact": {
+        "title": "Kontaktujte nás",
+        "subtitle": "Spojte sa s naším tímom",
+        "success": "Vaša správa bola úspešne odoslaná",
+        "tryAgain": "Odoslať ďalšiu správu",
+        "tabs": {
+            "contactForm": "Kontaktný formulár",
+            "faq": "FAQ",
+            "contactInfo": "Kontaktné informácie"
+        },
+        "contactFormTitle": "Pošlite nám správu",
+        "contactFormDescription": "Vyplňte formulár nižšie a čoskoro sa vám ozveme.",
+        "topicLabel": "Téma",
+        "topicPlaceholder": "Vyberte tému",
+        "generalInquiry": "Všeobecná otázka",
+        "technicalSupport": "Technická podpora",
+        "claimsInquiry": "Otázka o reklamáciách",
+        "billingInquiry": "Účtovanie a platby",
+        "otherInquiry": "Iná otázka",
+        "policyNumberLabel": "Číslo poistky",
+        "policyNumberPlaceholder": "Zadajte číslo poistky (voliteľné)",
+        "subjectLabel": "Predmet",
+        "subjectPlaceholder": "Zadajte predmet správy",
+        "messageLabel": "Správa",
+        "messagePlaceholder": "Zadajte svoju správu",
+        "nameLabel": "Vaše meno",
+        "namePlaceholder": "Zadajte svoje celé meno",
+        "emailLabel": "Emailová adresa",
+        "emailPlaceholder": "Zadajte svoju emailovú adresu",
+        "phoneLabel": "Telefónne číslo",
+        "phonePlaceholder": "Zadajte svoje telefónne číslo (voliteľné)",
+        "preferredContactLabel": "Preferovaný spôsob kontaktu",
+        "preferEmail": "Email",
+        "preferPhone": "Telefón",
+        "fileUploadLabel": "Prílohy",
+        "fileUploadButton": "Vybrať súbory",
+        "fileUploadDragAndDrop": "alebo pretiahnite súbory sem",
+        "fileUploadFormats": "Podporované formáty: PDF, DOC, DOCX, JPG, PNG (max 10MB)",
+        "sending": "Odosiela sa...",
+        "submit": "Odoslať správu",
+        "faqTitle": "Často kladené otázky",
+        "faqDescription": "Nájdite odpovede na bežné otázky týkajúce sa našich služieb.",
+        "faq1Question": "Ako si podám reklamáciu?",
+        "faq1Answer": "Reklamáciu môžete podať cez náš online portál, mobilnú aplikáciu alebo priamo kontaktovaním nášho oddelenia reklamácií.",
+        "faq2Question": "Aké spôsoby platby akceptujete?",
+        "faq2Answer": "Akceptujeme kreditné/debetné karty, bankové prevody a platby inkasom.",
+        "faq3Question": "Ako dlho trvá spracovanie reklamácie?",
+        "faq3Answer": "Väčšina reklamácií je spracovaná do 5-7 pracovných dní po obdržaní všetkých potrebných dokumentov.",
+        "faq4Question": "Môžem zmeniť pokrytie mojej poistky?",
+        "faq4Answer": "Áno, môžete kedykoľvek upravit svoje pokrytie. Kontaktujte náš zákaznícky servis pre viac informácií.",
+        "faq5Question": "Ako si aktualizujem svoje kontaktné informácie?",
+        "faq5Answer": "Kontaktné informácie môžete aktualizovať cez svoj online účet alebo kontaktovaním nášho zákazníckeho servisu.",
+        "faqAlertTitle": "Potrebujete ďalšiu pomoc?",
+        "faqAlertMessage": "Ak nenájdete odpoveď, ktorú hľadáte, kontaktujte náš podporný tím.",
+        "contactInfoTitle": "Kontaktné informácie",
+        "contactInfoDescription": "Nájdite najlepší spôsob, ako nás kontaktovať podľa vašich potrieb.",
+        "contactInfoTabs": {
+            "clients": "Pre klientov",
+            "intermediaries": "Pre zprostredkovateľov",
+            "media": "Pre médiá"
+        },
+        "contactInfoClientsPhoneTitle": "Call centrum",
+        "contactInfoClientsPhoneDescription": "Pre všeobecné otázky a podporu",
+        "contactInfoClientsPhone": "+420 800 123 456",
+        "contactInfoClientsPhoneName": "Zákaznícka podpora",
+        "contactInfoClientsPhonePosition": "K dispozícii 24/7",
+        "contactInfoClientsEmailTitle": "Emailová podpora",
+        "contactInfoClientsEmailDescription": "Pre písomné otázky",
+        "contactInfoClientsEmail": "support@novis.eu",
+        "contactInfoClientsEmailName": "Odpoveď do 24 hodín",
+        "contactInfoClientsMessageTitle": "Live chat",
+        "contactInfoClientsMessageDescription": "Chat s naším podporným tímom",
+        "contactInfoClientsMessage": "K dispozícii od pondelka do piatku",
+        "contactInfoClientsMessageName": "9:00 - 17:00 CET",
+        "contactInfoClientsAlertTitle": "Dôležité kontakty",
+        "contactInfoClientsAlertMessage": "Priame linky na konkrétne oddelenia:",
+        "contactInfoClientsAlertName1": "Oddelenie reklamácií",
+        "contactInfoClientsAlertPhone1": "+420 800 123 457",
+        "contactInfoClientsAlertName2": "Technická podpora",
+        "contactInfoClientsAlertPhone2": "+420 800 123 458",
+        "contactInfoClientsAlertName3": "Podpora účtovania",
+        "contactInfoClientsAlertPhone3": "+420 800 123 459",
+        "contactInfoClientsAlertName4": "Havária",
+        "contactInfoClientsAlertPhone4": "+420 800 123 460",
+        "contactInfoClientsAlertName5": "Prioritná podpora",
+        "contactInfoClientsAlertEmail": "priority@novis.eu",
+        "contactInfoIntermediariesPhoneTitle": "Podpora pre partnerov",
+        "contactInfoIntermediariesPhoneDescription": "Pre maklérov a agentov",
+        "contactInfoIntermediariesPhone": "+420 800 234 567",
+        "contactInfoIntermediariesPhoneName": "Vzťahy s partnermi",
+        "contactInfoIntermediariesPhonePosition": "Senior Partner Manager",
+        "contactInfoIntermediariesEmailTitle": "Email pre partnerov",
+        "contactInfoIntermediariesEmailDescription": "Pre otázky o partnerstve",
+        "contactInfoIntermediariesEmail": "partners@novis.eu",
+        "contactInfoIntermediariesEmailName": "Tím podpory pre partnerov",
+        "contactInfoIntermediariesAlertTitle": "Prístup k portálu pre partnerov",
+        "contactInfoIntermediariesAlertMessage": "Pre okamžitú pomoc:",
+        "contactInfoIntermediariesAlertName": "Partner Hotline",
+        "contactInfoIntermediariesAlertPhone": "+420 800 234 568",
+        "contactInfoIntermediariesAlertEmail": "Podpora portálu pre partnerov",
+        "contactInfoIntermediariesAlertEmailValue": "portal.support@novis.eu",
+        "contactInfoMediaTitle": "Mediálne vzťahy",
+        "contactInfoMediaDescription": "Pre tlačové a mediálne otázky",
+        "contactInfoMediaPhone": "+420 800 345 678",
+        "contactInfoMediaEmail": "press@novis.eu"
     },
-    "faq": {
-      "title": "Často Kladené Otázky",
-      "description": "Bežné otázky o NOVIS poistných fondoch",
-      "items": {
-        "what": {
-          "question": "Čo sú NOVIS Poistné Fondy?",
-          "answer": "NOVIS Poistné Fondy sú profesionálne spravované investičné portfóliá, ktoré kombinujú poistné krytie s investičnými príležitosťami, navrhnuté tak, aby vám pomohli dosiahnuť vaše dlhodobé finančné ciele."
+    "home": {
+        "title": "Vitajte na Novis CZ poistení",
+        "subtitle": "Váš dôveryhodný partner pre všetky poistné potreby. Prístup k vašim zmluvám, dokumentom a ďalším službám prostredníctvom klientskej zóny.",
+        "clientZoneButton": "Vstúpiť do klientskej zóny",
+        "learnMoreButton": "Zistiť viac",
+        "copyright": "Všetky práva vyhradené."
+    },
+    "insuranceFunds": {
+        "pageTitle": "NOVIS Poistné Fondy",
+        "pageDescription": "Objavte silu inteligentného investovania s NOVIS Poistnými Fondmi. Naše odborné fondy kombinujú bezpečnosť s potenciálom rastu, pomáhajú vám budovať silnejšiu finančnú budúcnosť a chrániť to, čo je pre vás najdôležitejšie.",
+        "exploreTitle": "Preskúmajte NOVIS Fondy",
+        "exploreDescription": "Zistite viac o našich investičných príležitostiach a začnite svoju cestu k finančnej bezpečnosti.",
+        "visitFunds": "Navštívte NOVIS Fondy",
+        "benefits": {
+            "secureInvestment": {
+                "title": "Bezpečná Investícia",
+                "description": "Vaše prostriedky sú chránené a spravované skúsenými profesionálmi"
+            },
+            "growthPotential": {
+                "title": "Potenciál Rast",
+                "description": "Dlhodobé investičné stratégie navrhnuté na optimálne výnosy"
+            },
+            "financialStability": {
+                "title": "Finančná Stabilita",
+                "description": "Diverzifikovaný prístup k portfóliu na minimalizáciu rizika"
+            }
         },
-        "how": {
-          "question": "Ako môžem investovať do NOVIS Fondov?",
-          "answer": "Do NOVIS Fondov môžete investovať prostredníctvom našich rôznych poistných produktov. Pre viac informácií kontaktujte náš podporný tím alebo navštívte našu podrobnú stránku fondov."
+        "testimonials": {
+            "title": "Čo hovoria naši klienti",
+            "quote": "Fondy NOVIS mi pomohli zabezpečiť finančnú budúcnosť mojej rodiny. Výnosy boli stabilné a služba výnimočná.",
+            "author": "Ján Novák",
+            "role": "Dlhodobý klient"
         },
-        "unique": {
-          "question": "Čím sú NOVIS Fondy jedinečné?",
-          "answer": "NOVIS Fondy ponúkajú jedinečnú kombináciu bezpečnosti, profesionálnej správy a potenciálu rastu, a to všetko pri poskytovaní poistného krytia pre váš pocit istoty."
+        "faq": {
+            "title": "Najčastejšie Otázky",
+            "description": "Bežné otázky týkajúce sa NOVIS Poistných Fondov",
+            "items": {
+                "what": {
+                    "question": "Čo sú NOVIS Poistné Fondy?",
+                    "answer": "NOVIS Poistné Fondy sú profesionálne riadené investičné portfóliá, ktoré kombinujú poistnú ochranu s investičnými príležitosťami, navrhnuté tak, aby vám pomohli dosiahnuť vaše dlhodobé finančné ciele."
+                },
+                "how": {
+                    "question": "Ako môžem investovať do NOVIS Fondov?",
+                    "answer": "Do NOVIS Fondov môžete investovať prostredníctvom našich rôznych poistných produktov. Kontaktujte náš podporný tím alebo navštívte našu podrobnú stránku o fondoch pre viac informácií."
+                },
+                "unique": {
+                    "question": "Čo robí NOVIS Fondy jedinečné?",
+                    "answer": "NOVIS Fondy ponúkajú jedinečnú kombináciu bezpečnosti, profesionálneho riadenia a potenciálu rastu, a to všetko pri zabezpečení poistenia pre vašu pokojnejšiu myseľ."
+                }
+            }
+        },
+        "support": {
+            "title": "Potrebujete viac informácií?",
+            "description": "Náš tím je tu, aby vám pomohol lepšie porozumieť našim poistným fondom.",
+            "button": "Kontaktujte podporu"
         }
-      }
     },
-    "support": {
-      "title": "Potrebujete Viac Informácií?",
-      "description": "Náš tím je tu, aby vám pomohol lepšie porozumieť našim poistným fondom.",
-      "button": "Kontaktovať Podporu"
+    "contracts": {
+        "title": "Produkt / VOP",
+        "type": "Typ",
+        "validPeriod": "Začiatok zmluvy / Dátum ukončenia",
+        "searchPlaceholder": "Hľadať zmluvy...",
+        "status": {
+            "active": "Aktívna",
+            "pending": "Čakajúca",
+            "expired": "Vypršala",
+            "label": "Stav"
+        },
+        "details": {
+            "annualPremium": "Poistné – Frekvencia platieb / Suma",
+            "accountBalance": "Zostatok na účte / Platný do",
+            "coverageDetails": "Detaily krytia",
+            "policyValid": "Poistenie platné od",
+            "to": "do",
+            "from": "od",
+            "viewDetails": "Zobraziť detaily",
+            "nextDatePayment": "Ďalší termín platby poistného"
+        },
+        "contractDetails": "Detaily zmluvy",
+        "policy": "Poistenie #{id}",
+        "contractHolder": {
+            "title": "Držiteľ zmluvy",
+            "description": "Osoba alebo entita zodpovedná za zmluvu",
+            "name": "Meno",
+            "id": "ID",
+            "email": "E-mail",
+            "cancel": "Zrušiť",
+            "basicData": "Základné údaje",
+            "firstNameLastName": "Meno a priezvisko: ",
+            "identityCard": "Občiansky preukaz: ",
+            "proofOfAddress": "Doklad o adrese: ",
+            "taxIdentification": "Daňové identifikačné číslo: ",
+            "dateBirth": "Dátum narodenia / Miesto: ",
+            "contactData": "Kontaktné údaje",
+            "mobilePhone": "Telefón - mobil: ",
+            "permanentAddress": "Trvalá adresa: ",
+            "postalAddress": "Korešpondenčná adresa: "
+        },
+        "insuredPerson": {
+            "title": "Poistená osoba",
+            "description": "Osoba, ktorej život alebo majetok je poistený",
+            "name": "Meno",
+            "id": "ID",
+            "email": "E-mail",
+            "coveredRisks": "Pokryté riziká",
+            "deathCover": "Poistenie pre prípad smrti: ",
+            "accidentInsurance": "Poistenie proti úrazu: ",
+            "illness": "Choroby a operácie: "
+        },
+        "beneficiary": {
+            "title": "Príjemci v prípade úmrtia",
+            "description": "Osoby určené na prevzatie dávok v prípade úmrtia poistenej osoby",
+            "name": "Meno",
+            "id": "ID",
+            "birthdate": "Dátum narodenia",
+            "sharePercentage": "Percentuálny podiel oprávnených osôb: "
+        },
+        "relatedDocuments": {
+            "title": "Súvisiace dokumenty",
+            "description": "Dokumenty spojené s touto zmluvou",
+            "noDocuments": "K tejto zmluve nie sú priradené žiadne dokumenty."
+        },
+        "updateSuccess": "Zmluva bola úspešne aktualizovaná!",
+        "save": "Uložiť",
+        "noResults": "Žiadne zmluvy nevyhovujú vašim kritériám.",
+        "contractList": {
+            "title": "Vaše zmluvy",
+            "search": "Hľadať zmluvy...",
+            "active": "Aktívna",
+            "cancelled": "Zrušená",
+            "expired": "Vypršala"
+        },
+        "coverageDetails": "Detaily krytia",
+        "validPeriodPolicy": "Platnosť poistenia",
+        "from": "od",
+        "to": "do"
+    },
+    "documents": {
+        "title": "Dokumenty",
+        "search": {
+            "placeholder": "Hľadať dokumenty..."
+        },
+        "filters": {
+            "all": "Všetky",
+            "types": {
+                "statement": "Výpis",
+                "invoice": "Faktúra",
+                "contract": "Zmluva",
+                "report": "Správa"
+            }
+        },
+        "table": {
+            "header": {
+                "document": "Dokument",
+                "type": "Typ",
+                "date": "Dátum",
+                "relatedTo": "Súvisiace s",
+                "actions": "Akcie"
+            },
+            "general": "Všeobecné",
+            "unknownContract": "Neznáma zmluva",
+            "noResults": "Neboli nájdené žiadne dokumenty, ktoré by zodpovedali vašim kritériám.",
+            "actions": {
+                "view": "Zobraziť",
+                "download": "Stiahnuť"
+            }
+        }
+    },
+    "settings": {
+        "title": "Nastavenia",
+        "personalInfo": {
+            "title": "Osobné údaje",
+            "description": "Vaše údaje o účte a preferencie",
+            "clientId": "ID klienta",
+            "editProfile": "Upravit profil",
+            "cancel": "Zrušiť",
+            "success": "Profil bol úspešne aktualizovaný!"
+        },
+        "contactDetails": {
+            "title": "Kontaktné údaje",
+            "description": "Spravujte svoje kontaktné informácie",
+            "fullName": "Celé meno",
+            "emailAddress": "E-mailová adresa",
+            "phoneNumber": "Telefónne číslo",
+            "address": "Adresa",
+            "saveChanges": "Uložiť zmeny"
+        },
+        "security": {
+            "title": "Nastavenia zabezpečenia",
+            "description": "Spravujte svoje heslo a bezpečnostné preferencie",
+            "currentPassword": "Súčasné heslo",
+            "newPassword": "Nové heslo",
+            "confirmPassword": "Potvrdiť nové heslo",
+            "updatePassword": "Aktualizovať heslo",
+            "validation": {
+                "passwordMismatch": "Nové heslá sa nezhodujú!",
+                "passwordLength": "Heslo musí mať aspoň 6 znakov!",
+                "success": "Heslo bolo úspešne aktualizované!"
+            }
+        },
+        "notifications": {
+            "title": "Nastavenia upozornení",
+            "description": "Spravujte svoje preferencie upozornení",
+            "email": {
+                "title": "E-mailové upozornenia",
+                "contractUpdates": "Aktualizácie zmluvy",
+                "paymentReminders": "Pripomenutia platby",
+                "newDocuments": "Nové dokumenty",
+                "policyChanges": "Zmeny v politike"
+            },
+            "sms": {
+                "title": "SMS upozornenia",
+                "paymentReminders": "Pripomenutia platby",
+                "importantUpdates": "Dôležité aktualizácie"
+            },
+            "savePreferences": "Uložiť preferencie"
+        }
     }
-  },
-  "settings": {
-    "title": "Nastavenia",
-    "personalInfo": {
-      "title": "Osobné Informácie",
-      "description": "Vaše údaje o účte a preferencie",
-      "clientId": "ID Klienta",
-      "editProfile": "Upraviť Profil",
-      "cancel": "Zrušiť",
-      "success": "Profil bol úspešne aktualizovaný!"
-    },
-    "contactDetails": {
-      "title": "Kontaktné Údaje",
-      "description": "Spravujte svoje kontaktné informácie",
-      "fullName": "Celé Meno",
-      "emailAddress": "Emailová Adresa",
-      "phoneNumber": "Telefónne Číslo",
-      "address": "Adresa",
-      "saveChanges": "Uložiť Zmeny"
-    },
-    "security": {
-      "title": "Nastavenia Zabezpečenia",
-      "description": "Spravujte svoje heslo a preferencie zabezpečenia",
-      "currentPassword": "Aktuálne Heslo",
-      "newPassword": "Nové Heslo",
-      "confirmPassword": "Potvrdiť Nové Heslo",
-      "updatePassword": "Aktualizovať Heslo",
-      "validation": {
-        "passwordMismatch": "Nové heslá sa nezhodujú!",
-        "passwordLength": "Heslo musí mať aspoň 6 znakov!",
-        "success": "Heslo bolo úspešne aktualizované!"
-      }
-    },
-    "notifications": {
-      "title": "Nastavenia Upozornení",
-      "description": "Spravujte svoje preferencie upozornení",
-      "email": {
-        "title": "Emailové Upozornenia",
-        "contractUpdates": "Aktualizácie Zmluvy",
-        "paymentReminders": "Pripomienky Platieb",
-        "newDocuments": "Nové Dokumenty",
-        "policyChanges": "Zmeny Poistky"
-      },
-      "sms": {
-        "title": "SMS Upozornenia",
-        "paymentReminders": "Pripomienky Platieb",
-        "importantUpdates": "Dôležité Aktualizácie"
-      },
-      "savePreferences": "Uložiť Preferencie"
-    }
-  }
 }

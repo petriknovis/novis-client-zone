@@ -76,21 +76,45 @@
     "invalidCredentials": "Invalid email or password"
   },
   "dashboard": {
-    "welcome": "Welcome to your dashboard",
+    "welcome": "We’re glad to have you back.",
     "overview": "Overview",
-    "activeContracts": "Active Contracts",
+    "activeContracts": "{count} Active Policies",
     "totalContracts": "Across {count} total contracts",
     "totalDocuments": "Total Documents",
     "documentsAvailable": "Available in your client zone",
     "annualPremium": "Annual Premium",
-    "nextPayment": "Next Payment",
+    "nextPayment": "Next Payment Due",
+    "monthlyPremium": "Monthly Premium",
+    "totalCoverage": "Your Coverage",
+    "coverageTypes": "Including: {types}",
+    "insuranceOverview": "Your Insurance Policies",
+    "validUntil": "Valid until",
+    "premium": "Premium",
+    "property": "Property",
+    "vehicle": "Vehicle",
+    "personal": "Personal",
     "recentContracts": "Recent Contracts",
     "recentDocuments": "Recent Documents",
     "viewAll": "View all",
     "viewDetails": "View details",
     "view": "View",
     "back": "Back",
-    "loading": "Loading contract details..."
+    "loading": "Loading contract details...",
+    "goodMorning": "Good Morning",
+    "goodAfternoon": "Good Afternoon",
+    "goodEvening": "Good Evening",
+    "welcomeMessage": "We’re glad to have you back.",
+    "localTime": "Local Time",
+    "todayIs": "Today is",
+    "haveAGreatDay": "Make today amazing!",
+    "quickTip": "Quick Tip",
+    "dailyTip": "Remember to take short breaks and stay hydrated throughout your day!",
+    "activitySummary": "Activity Summary",
+    "lastLoginTime": "Last Login",
+    "notificationCount": "Notifications",
+    "newNotifications": "{count} new notifications",
+    "nextReminder": "Next Reminder",
+    "upcomingEvent": "Team meeting at 2 PM"
   },
   "contact": {
     "title": "Contact Us",
@@ -256,9 +280,9 @@
     }
   },
   "contracts": {
-    "contractTitle": "Contract Title",
+    "title": "Product / GTC",
     "type": "Type",
-    "validPeriod": "Valid Period",
+    "validPeriod": "Start of contract / End Date",
     "searchPlaceholder": "Search contracts...",
     "status": {
       "active": "Active",
@@ -267,11 +291,14 @@
       "label": "Status"
     },
     "details": {
-      "annualPremium": "Annual Premium",
+      "annualPremium": "Insurance premium - Payment frequency / Amount",
+      "accountBalance": "Account balance / Valid to",
       "coverageDetails": "Coverage Details",
       "policyValid": "Policy valid from",
       "to": "to",
-      "viewDetails": "View details"
+      "from": "from",
+      "viewDetails": "View details",
+      "nextDatePayment": "Next date insurance premium payment"
     },
     "contractDetails": "Contract Details",
     "policy": "Policy #{id}",
@@ -281,21 +308,36 @@
       "name": "Name",
       "id": "ID",
       "email": "Email",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "basicData": "Basic data",
+      "firstNameLastName": "First and Surname: ",
+      "identityCard": "Identity Card: ",
+      "proofOfAddress": "Proof of Address ID: ",
+      "taxIdentification": "Tax identification: ",
+      "dateBirth": "Date of birth / Place: ",
+      "contactData": "Contact data",
+      "mobilePhone": "Phone-mobile: ",
+      "permanentAddress": "Permanent Address: ",
+      "postalAddress": "Postal address: "
     },
     "insuredPerson": {
       "title": "Insured Person",
       "description": "The individual whose life or property is covered by the insurance",
       "name": "Name",
       "id": "ID",
-      "email": "Email"
+      "email": "Email",
+      "coveredRisks": "Covered risks: ",
+      "deathCover": "Death Cover: ",
+      "accidentInsurance": "Accident Insurance: ",
+      "illness": "Illnesses and operations: "
     },
     "beneficiary": {
       "title": "Beneficiaries in Case of Death",
       "description": "Individuals designated to receive benefits in the event of the insured person's death",
       "name": "Name",
       "id": "ID",
-      "birthdate": "Birthdate"
+      "birthdate": "Birthdate",
+      "sharePercentage": "Share percentage of beneficiaries: "
     },
     "relatedDocuments": {
       "title": "Related Documents",
@@ -313,7 +355,7 @@
       "expired": "Expired"
     },
     "coverageDetails": "Coverage Details",
-    "validPeriod": "Policy Validity",
+    "validPeriodPolicy": "Policy Validity",
     "from": "from",
     "to": "to"
   },

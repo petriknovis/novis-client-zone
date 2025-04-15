@@ -2,11 +2,15 @@ export type Contract = {
   id: string;
   title: string;
   type: string;
+  number: string;
   startDate: string;
   endDate: string;
   premium: number;
+  nextDate: string,
+  accountBalance: string,
+  validTo: string,
   status: "active" | "pending" | "expired";
-  details: string;
+  
 };
 
 export type Document = {
@@ -21,33 +25,45 @@ export type Document = {
 export const contracts: Contract[] = [
   {
     id: "1",
-    title: "Home Insurance",
-    type: "Property",
+    title: "NOVIS Product / VPP - HUP 3030 / NOVUM Balesetbiztosítás",
+    type: "Contract number",
+    number: "101400067",
     startDate: "2024-01-01",
     endDate: "2025-01-01",
+    nextDate: "2025-07-23",
+    accountBalance: "3600",
+    validTo: "2027-07-23",
     premium: 1200,
     status: "active",
-    details: "Coverage for home and property damage"
+    
   },
   {
     id: "2",
-    title: "Car Insurance",
-    type: "Vehicle",
+    title: "NOVIS Product / VPP - HUP 1014/ NOVUM Nyugdíjbiztosítás",
+    type: "Contract number",
+    number: "101400066",
     startDate: "2024-02-15",
     endDate: "2025-02-15",
+    nextDate: "2025-06-25",
+    accountBalance: "6600",
+    validTo: "2028-07-23",
     premium: 800,
     status: "active",
-    details: "Full coverage for your vehicle"
+    
   },
   {
     id: "3",
-    title: "Life Insurance",
-    type: "Personal",
-    startDate: "2023-10-01",
+    title: "NOVIS Product / VPP - HUP 2021 / NOVUM Életbiztosítás",
+    type: "Contract number",
+    number: "101400068",
+    startDate: "2023-05-23",
     endDate: "2033-10-01",
+    nextDate: "2025-09-12",
+    accountBalance: "3600",
+    validTo: "2029-07-23",
     premium: 2400,
     status: "active",
-    details: "Life insurance with savings component"
+    
   }
 ];
 
