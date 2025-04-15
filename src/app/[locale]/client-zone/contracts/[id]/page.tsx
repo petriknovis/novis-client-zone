@@ -30,7 +30,9 @@ export default function ContractDetailsPage() {
     contractHolder: false,
     insuredPerson: false,
     beneficiary: false,
-    relatedDocuments: false
+    relatedDocuments: false,
+    portfolio: false,
+    payments: false
   });
   const [mounted, setMounted] = useState(false);
 
@@ -130,16 +132,16 @@ export default function ContractDetailsPage() {
                   <div className="mr-15">
                     <p className="text-sm text-gray-500">{t('status.label')}</p>
                     <p className={`font-medium inline-flex items-center ${contract.status === "active"
-                        ? "text-green-600"
-                        : contract.status === "pending"
-                          ? "text-yellow-600"
-                          : "text-gray-600"
+                      ? "text-green-600"
+                      : contract.status === "pending"
+                        ? "text-yellow-600"
+                        : "text-gray-600"
                       }`}>
                       <span className={`w-2 h-2 rounded-full mr-2 ${contract.status === "active"
-                          ? "bg-green-600"
-                          : contract.status === "pending"
-                            ? "bg-yellow-600"
-                            : "bg-gray-600"
+                        ? "bg-green-600"
+                        : contract.status === "pending"
+                          ? "bg-yellow-600"
+                          : "bg-gray-600"
                         }`}></span>
                       {t(`status.${contract.status}`)}
                     </p>
@@ -256,7 +258,7 @@ export default function ContractDetailsPage() {
                               <p className="font-medium">{contract.details}</p>
                             </div> */}
                           </div>
-                          
+
                         </div>
                       )}
                     </div>
@@ -265,7 +267,7 @@ export default function ContractDetailsPage() {
               </CardContent>
             </Card>
 
-            
+
 
             {/* Contract holder */}
             <Card>
@@ -357,7 +359,7 @@ export default function ContractDetailsPage() {
                         <p className="font-semibold mb-2">{t('insuredPerson.coveredRisks')}</p>
                         <p><span className="text-gray-500">{t('insuredPerson.deathCover')}</span> <span className="font-medium">€1,200</span></p>
                         <p><span className="text-gray-500">{t('insuredPerson.accidentInsurance')}</span> <span className="font-medium">€1,700</span></p>
-                        <p><span className="text-gray-500">{t('insuredPerson.illness')}</span> <span className="font-medium">€12,200</span></p> 
+                        <p><span className="text-gray-500">{t('insuredPerson.illness')}</span> <span className="font-medium">€12,200</span> </p>
                       </div>
                     </div>
                   </CardContent>
@@ -406,6 +408,7 @@ export default function ContractDetailsPage() {
               </div>
             </Card>
 
+            {/* Portfolio */}
             <Card>
               <div className="grid gap-6 last:mb-5">
                 <CardHeader>
@@ -413,7 +416,7 @@ export default function ContractDetailsPage() {
                     <div>
                       <CardTitle>Portfolio</CardTitle>
                       <CardDescription>
-                        Prehľad vašich poistných zmlúv, podrobností o krytí a investičných zložiek.
+                        Overview of your insurance contracts, coverage details and investment components.
                       </CardDescription>
                     </div>
                     <button onClick={() => toggleSection('portfolio')}>
@@ -422,9 +425,141 @@ export default function ContractDetailsPage() {
                   </div>
                 </CardHeader>
 
+                {showDetails?.portfolio && (
+                  <CardContent>
+                    <div className="space-y-6 text-sm">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+                        {/* Základné údaje */}
+                        <div>
+                          <p className="font-semibold mb-2">Current value of the investment units registered on your account</p>
+                          <p><span className="text-gray-500">Account Balance: </span> <span className="font-medium">€1,547,164.85</span></p>
+                          <p><span className="text-gray-500">Liquid Account Balance: </span> <span className="font-medium">€761,427.40</span></p>
+                          <p><span className="text-gray-500">Tax Bonus: </span> <span className="font-medium">€371,435.00</span></p>
+                          <p><span className="text-gray-500">NOVIS Bonuses Balance: </span> <span className="font-medium">€3,553.00</span></p>
+                          <p><span className="text-gray-500">NOVIS Special Bonus:</span> <span className="font-medium">€2,559,783.71</span></p>
+                          <p><span className="text-gray-500">Summary:</span> <span className="font-medium">€2,559,783.71</span></p>
+                        </div>
+
+                        {/* Kontaktné údaje */}
+                        <div>
+                          <p className="font-semibold mb-2">NOVIS bonuses and tax credits available during the contract period</p>
+                          <p><span className="text-gray-500">NOVIS bonuses: </span> <span className="font-medium">€3,553.00</span></p>
+                          <p><span className="text-gray-500">Tax credits: </span> <span className="font-medium">€371,435.00</span></p>
+                          <p><span className="text-gray-500">Summary: </span> <span className="font-medium">€374,988.00</span></p>
+                          <p className="text-sm text-gray-500 mt-4">
+                          *The data shown are for informational purposes only. They include all NOVIS bonuses and tax credits available during the contract period. The calculation was made on the assumption that the payment is contracted until the entire contract period, the insurance coverage remains unchanged and that the insurance contract remain in force throughout. During the calculation, we did not calculate the assumed return of bonuses and tax credits.
+                        </p>
+                        </div>
+                      </div>
+                      
+
+
+                      <div>
+                        <h4 className="font-semibold mb-4">Portfolio Overview</h4>
+
+                        {/* First Table */}
+                        <div className="space-y-4 mb-8">
+                          <div className="grid grid-cols-6 gap-4 py-2 text-sm font-medium bg-blue-50 px-2">
+                            <div>My portfolio</div>
+                            <div className="text-right">Current value</div>
+                            <div className="text-right">Initial investment</div>
+                            <div className="text-right">Bonuses</div>
+                            <div className="text-right">Rate</div>
+                            <div className="text-right">Profit</div>
+                          </div>
+                          <div className="grid grid-cols-6 gap-4 py-2 border-b px-2">
+                            <div>NOVIS Guaranteed</div>
+                            <div className="text-right">0.00</div>
+                            <div className="text-right">0.00</div>
+                            <div className="text-right">0.00</div>
+                            <div className="text-right">0</div>
+                            <div className="text-right">0 Ft</div>
+                          </div>
+                          <div className="grid grid-cols-6 gap-4 py-2 border-b px-2">
+                            <div>NOVIS Dynamic</div>
+                            <div className="text-right">0.00</div>
+                            <div className="text-right">0.00</div>
+                            <div className="text-right">0.00</div>
+                            <div className="text-right">0</div>
+                            <div className="text-right">0 Ft</div>
+                          </div>
+                          <div className="grid grid-cols-6 gap-4 py-2 font-medium bg-blue-50 px-2">
+                            <div>Total:</div>
+                            <div className="text-right">0 Ft</div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                          </div>
+                        </div>
+
+                        {/* Second Table */}
+                        <div className="space-y-4 mb-8">
+                          <div className="grid grid-cols-6 gap-4 py-2 text-sm font-medium bg-blue-50 px-2">
+                            <div>Insurance Fund</div>
+                            <div className="text-right">Current value</div>
+                            <div className="text-right">Initial investment</div>
+                            <div className="text-right">Bonuses</div>
+                            <div className="text-right">Rate</div>
+                            <div className="text-right">Profit</div>
+                          </div>
+                          {[
+                            'NOVIS Absolute Return Insurance Fund',
+                            'NOVIS Bond Insurance Fund Magyar Korona',
+                            'NOVIS ETF Share Insurance Fund',
+                            'NOVIS Global Select Insurance Fund',
+                            'NOVIS Gold Insurance Fund',
+                            'NOVIS Fixed Income Insurance Fund',
+                            'NOVIS World Brands Insurance Fund',
+                            'NOVIS Latin America Insurance Fund',
+                            'NOVIS Dividend Insurance Fund'
+                          ].map((fund, index) => (
+                            <div key={index} className="grid grid-cols-6 gap-4 py-2 border-b px-2">
+                              <div>{fund}</div>
+                              <div className="text-right">0.00</div>
+                              <div className="text-right">0.00</div>
+                              <div className="text-right">0.00</div>
+                              <div className="text-right">0</div>
+                              <div className="text-right">0 Ft</div>
+                            </div>
+                          ))}
+                          <div className="grid grid-cols-6 gap-4 py-2 font-medium bg-blue-50 px-2">
+                            <div>Total:</div>
+                            <div className="text-right">0 Ft</div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                          </div>
+                        </div>
+
+                        {/* Third Table */}
+                        <div className="space-y-4">
+                          <div className="grid grid-cols-6 gap-4 py-2 text-sm font-medium bg-blue-50 px-2">
+                            <div>Technical Account</div>
+                            <div className="text-right">1,547,164.85</div>
+                            <div className="text-right">761,427.40</div>
+                            <div className="text-right">371,435.00</div>
+                            <div className="text-right">3,553.00</div>
+                            <div className="text-right">2,559,783.71</div>
+                          </div>
+                          <div className="grid grid-cols-6 gap-4 py-2 font-medium bg-blue-50 px-2 mt-4">
+                            <div>Total Portfolio Value as of 15.04.2025:</div>
+                            <div className="text-right">2,559,783.71</div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                            <div className="text-right"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                )}
               </div>
             </Card>
 
+            {/* Payments */}
             <Card>
               <div className="grid gap-6 last:mb-5">
                 <CardHeader>
